@@ -4,15 +4,7 @@ quotes = ["Ecoutez-moi, Monsieur Shakespeare, nous avons beau être ou ne pas ê
 characters = ["alvin et les Chipmunks", "Babar", "betty boop", "calimero", "casper", "le chat potté", "Kirikou"]
 
 # show random quote
-user_answer = "B"
-
-if user_answer is "B":
-    # leave the program
-    pass
-elif user_answer == "C":
-    print("c'est la bonne réponse ! Et G pas d'humour, je C...")
-else:
-    pass
+user_answer = input("Tapez entree pour connaitre une autre citation ou B pour quitter le programme.")
 
 
 # Show another quote
@@ -24,5 +16,9 @@ def get_random_quote(my_list):
 
     return "the program is over"
 
+
+while user_answer != "B":
+    print(get_random_quote(quotes))
+    user_answer = input("Tapez entree pour connaitre une autre citation ou B pour quitter le programme.")
 
 print(get_random_quote(quotes))
