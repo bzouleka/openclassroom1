@@ -21,4 +21,9 @@ while user_answer != "B":
     print(get_random_quote(quotes))
     user_answer = input("Tapez entree pour connaitre une autre citation ou B pour quitter le programme.")
 
+
+for character in characters:
+    a_character = character.capitalize()
+    print(a_character)
+
 print(get_random_quote(quotes))
